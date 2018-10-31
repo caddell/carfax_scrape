@@ -17,7 +17,6 @@ zip_input <- remDr$findElement(using = "name", "zip")
 zip_input$sendKeysToElement(list(zip))
 
 car1 = c("1FAHP35N39W268027")
-car2 = c("JA3AH86F43U123139")
 
 car_details = function(cars,zip){
   #input zip
@@ -92,11 +91,6 @@ car_details = function(cars,zip){
 }
 
 
-
-cars = read.csv("raw_car_data.csv")
-vin = as.character(cars$VIN..) 
-#remove empty vins
-vin = vin[vin != ""]
 
 carData = data.frame()
 
